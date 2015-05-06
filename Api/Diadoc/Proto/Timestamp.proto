@@ -1,0 +1,6 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+message Timestamp
+{
+    required sfixed64 Ticks = 1;
+}

@@ -1,0 +1,5 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+message CloudSignResult {
+    optional string Token = 1;
+}

@@ -1,0 +1,12 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model.InvoiceDocument;
+
+enum InvoiceStatus {
+    UnknownInvoiceStatus = 0;
+    OutboundWaitingForInvoiceReceipt = 1;
+    OutboundNotFinished = 2;
+    OutboundFinished = 3;
+    OutboundWaitingForSenderSignature = 6;
+    OutboundInvalidSenderSignature = 7;
+    InboundNotFinished = 4;
+    InboundFinished = 5;
+}

@@ -1,0 +1,9 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model.InvoiceDocument;
+
+[Flags] enum InvoiceAmendmentFlags
+{
+    None = 0,
+    AmendmentRequested = 1,
+    Revised = 2,
+    Corrected = 4,
+}

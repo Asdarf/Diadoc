@@ -1,0 +1,30 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+import "Address.proto";
+import "Department.proto";
+
+message Box {
+    required string BoxId = 1;
+    required string Title = 2;
+    optional Organization Organization = 3;
+}
+
+message Organization {
+    required string OrgId = 1;
+    required string Inn = 2;
+    optional string Kpp = 3;
+    required string FullName = 4;
+    optional string ShortName = 5;
+    repeated Box Boxes = 7;
+    optional string Ogrn = 8;
+    optional string FnsParticipantId = 9;
+    optional Address Address = 10;
+    optional string FnsRegistrationDate = 11;
+    repeated Department Departments = 12;
+    optional string IfnsCode = 13;
+    optional bool IsPilot = 14;
+    optional bool IsActive = 15;
+    optional bool IsTest = 16;
+    optional bool IsBranch = 17;
+    optional bool IsRoaming = 18;
+}

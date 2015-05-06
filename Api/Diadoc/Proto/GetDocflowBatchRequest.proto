@@ -1,0 +1,8 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+import "GetDocflowRequest.proto";
+
+message GetDocflowBatchRequest
+{
+    repeated GetDocflowRequest Requests = 1;
+}

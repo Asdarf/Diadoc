@@ -1,0 +1,10 @@
+import "BilateralDocument/BilateralDocumentStatus.proto";
+
+package CRM.Lib.Docflow.Api.Diadoc.Model.BilateralDocument;
+
+message PriceListMetadata {
+    required BilateralDocumentStatus DocumentStatus = 1;
+    optional string PriceListEffectiveDate = 2;
+    optional string ContractDocumentDate = 3;
+    optional string ContractDocumentNumber = 4;
+}

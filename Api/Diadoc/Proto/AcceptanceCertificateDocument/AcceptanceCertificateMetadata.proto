@@ -1,0 +1,12 @@
+import "AcceptanceCertificateDocument/AcceptanceCertificateDocumentStatus.proto";
+import "ReceiptStatus.proto";
+
+package CRM.Lib.Docflow.Api.Diadoc.Model.AcceptanceCertificateDocument;
+
+message AcceptanceCertificateMetadata {
+    optional AcceptanceCertificateDocumentStatus DocumentStatus = 1 [default = UnknownAcceptanceCertificateDocumentStatus];
+    required string Total = 2;
+    optional string Vat = 3;
+    optional string Grounds = 4;
+    optional CRM.Lib.Docflow.Api.Diadoc.Model.ReceiptStatus ReceiptStatus = 5 [default = UnknownReceiptStatus];
+}

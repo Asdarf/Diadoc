@@ -1,0 +1,6 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+message CustomDataItem {
+	required string Key = 1;
+	optional string Value = 2;
+}

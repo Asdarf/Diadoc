@@ -1,0 +1,9 @@
+import "DocumentDateAndNumber.proto";
+
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+message PriceListDocumentInfo
+{
+    optional string PriceListEffectiveDate = 1;
+    optional DocumentDateAndNumber ContractDocumentDateAndNumber = 2;
+}

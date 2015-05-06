@@ -1,0 +1,11 @@
+import "ResolutionStatusType.proto";
+import "ResolutionTarget.proto";
+
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+message ResolutionStatus {
+    required ResolutionStatusType Type = 1;
+    optional ResolutionTarget Target = 2;
+    required string AuthorUserId = 3;
+    required string AuthorFIO = 4;
+}

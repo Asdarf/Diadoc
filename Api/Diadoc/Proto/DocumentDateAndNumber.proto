@@ -1,0 +1,7 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+message DocumentDateAndNumber
+{
+    optional string DocumentDate = 1;
+    optional string DocumentNumber = 2;
+}

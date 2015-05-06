@@ -1,0 +1,5 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+message AsyncMethodResult {
+    optional string TaskId = 1;
+}

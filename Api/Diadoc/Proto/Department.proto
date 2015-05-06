@@ -1,0 +1,13 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+import "Address.proto";
+
+message Department
+{
+    required string DepartmentId = 1;
+    required string ParentDepartmentId = 2;
+    required string Name = 3;
+    optional string Abbreviation = 4;
+    optional string Kpp = 5;
+    optional Address Address = 6;
+}

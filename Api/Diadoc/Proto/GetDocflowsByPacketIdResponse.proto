@@ -1,0 +1,9 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+import "FetchedDocument.proto";
+
+message GetDocflowsByPacketIdResponse
+{
+    repeated FetchedDocument Documents = 1;
+    optional bytes NextPageIndexKey = 2;
+}

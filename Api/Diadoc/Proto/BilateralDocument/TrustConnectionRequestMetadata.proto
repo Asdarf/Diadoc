@@ -1,0 +1,7 @@
+import "BilateralDocument/BilateralDocumentStatus.proto";
+
+package CRM.Lib.Docflow.Api.Diadoc.Model.BilateralDocument;
+
+message TrustConnectionRequestMetadata {
+    optional BilateralDocumentStatus TrustConnectionRequestStatus = 1 [default = UnknownBilateralDocumentStatus];
+}

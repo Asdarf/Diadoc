@@ -1,0 +1,34 @@
+import "DocumentType.proto";
+import "DocumentDateAndNumber.proto";
+import "BasicDocumentInfo.proto";
+import "InvoiceDocumentInfo.proto";
+import "InvoiceCorrectionDocumentInfo.proto";
+import "PriceListDocumentInfo.proto";
+import "ContractDocumentInfo.proto";
+
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+message DocumentInfo
+{
+    optional DocumentType DocumentType = 1 [default = UnknownDocumentType];
+    optional DocumentDirection DocumentDirection = 2 [default = UnknownDocumentDirection];
+    optional bool IsTest = 3;
+    optional string CustomDocumentId = 4;
+    optional string FromDepartmentId = 5;
+    optional string ToDepartmentId = 6;
+    optional string CounteragentBoxId = 7;
+    optional DocumentDateAndNumber DocumentDateAndNumber = 8;
+    optional BasicDocumentInfo BasicDocumentInfo = 9;
+    optional InvoiceDocumentInfo InvoiceInfo = 10;
+    optional InvoiceCorrectionDocumentInfo InvoiceCorrectionInfo = 11;
+    optional PriceListDocumentInfo PriceListInfo = 12;
+    optional ContractDocumentInfo ContractInfo = 13;
+}
+
+enum DocumentDirection
+{
+    UnknownDocumentDirection = 0;
+    Inbound = 1;
+    Outbound = 2;
+    Internal = 3;
+}

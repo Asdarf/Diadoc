@@ -1,0 +1,9 @@
+import "Timestamp.proto";
+import "ResolutionTarget.proto";
+import "Docflow/Attachment.proto";
+
+package CRM.Lib.Docflow.Api.Diadoc.Model.Docflow;
+
+message ResolutionDocflow
+{
+}

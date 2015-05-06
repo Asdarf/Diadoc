@@ -1,0 +1,17 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+import "Timestamp.proto";
+
+message TimeBasedFilter
+{
+    optional Timestamp FromTimestamp = 1;
+    optional Timestamp ToTimestamp = 2;
+    optional SortDirection SortDirection = 3 [default = Ascending];
+}
+
+enum SortDirection
+{
+    UnknownSortDirection = 0;
+    Ascending = 1;
+    Descending = 2;
+}

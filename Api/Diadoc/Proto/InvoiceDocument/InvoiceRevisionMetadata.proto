@@ -1,0 +1,12 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model.InvoiceDocument;
+import "InvoiceDocument/InvoiceStatus.proto";
+message InvoiceRevisionMetadata {
+    optional InvoiceStatus InvoiceRevisionStatus = 1 [default = UnknownInvoiceStatus];
+    required string OriginalInvoiceNumber = 2;
+    required string OriginalInvoiceDate = 3;
+    required string Total = 4;
+    required string Vat = 5;
+    required int32 Currency = 6;
+    required sfixed64 ConfirmationDateTimeTicks = 7;
+    required int32 InvoiceAmendmentFlags = 8;
+}

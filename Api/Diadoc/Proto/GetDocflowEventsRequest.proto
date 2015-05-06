@@ -1,0 +1,12 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+import "TimeBasedFilter.proto";
+
+message GetDocflowEventsRequest
+{
+    required TimeBasedFilter Filter = 1;
+    optional bytes AfterIndexKey = 2;
+    optional bool PopulateDocuments = 3 [default = false];
+    optional bool InjectEntityContent = 4 [default = false];
+    optional bool PopulatePreviousDocumentStates = 5 [default = false];
+}

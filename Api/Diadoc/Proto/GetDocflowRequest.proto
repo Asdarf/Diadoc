@@ -1,0 +1,10 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+import "DocumentId.proto";
+
+message GetDocflowRequest
+{
+    required DocumentId DocumentId = 1;
+    optional string LastEventId = 2;
+    optional bool InjectEntityContent = 3 [default = false];
+}

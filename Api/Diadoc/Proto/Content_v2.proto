@@ -1,0 +1,7 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+message Content_v2 {
+    optional bytes Content = 1;
+    optional string NameOnShelf = 2;
+    optional string PatchedContentId = 3;
+}

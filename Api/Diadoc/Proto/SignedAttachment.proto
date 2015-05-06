@@ -1,0 +1,8 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+message SignedAttachment
+{
+    optional Attachment Attachment = 1;
+    optional Signature Signature = 2;
+    optional Entity Comment = 3;
+}

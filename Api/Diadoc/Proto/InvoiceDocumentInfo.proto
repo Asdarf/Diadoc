@@ -1,0 +1,11 @@
+import "DocumentDateAndNumber.proto";
+
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+message InvoiceDocumentInfo
+{
+    optional string Total = 1;
+    optional string Vat = 2;
+    optional int32 CurrencyCode = 3;
+    optional DocumentDateAndNumber OriginalInvoiceDateAndNumber = 4;
+}

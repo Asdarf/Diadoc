@@ -1,0 +1,9 @@
+import "BilateralDocument/BilateralDocumentStatus.proto";
+import "ReceiptStatus.proto";
+
+package CRM.Lib.Docflow.Api.Diadoc.Model.BilateralDocument;
+
+message BilateralDocumentMetadata {
+    required BilateralDocumentStatus DocumentStatus = 1 [default = UnknownBilateralDocumentStatus];
+    required CRM.Lib.Docflow.Api.Diadoc.Model.ReceiptStatus ReceiptStatus = 2 [default = UnknownReceiptStatus];
+}

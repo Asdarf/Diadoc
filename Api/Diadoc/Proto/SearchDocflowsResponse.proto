@@ -1,0 +1,9 @@
+import "Docflow/DocumentWithDocflow.proto";
+
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+message SearchDocflowsResponse
+{
+    repeated CRM.Lib.Docflow.Api.Diadoc.Model.Docflow.DocumentWithDocflow Documents = 1;
+    optional bool HaveMoreDocuments = 2;
+}

@@ -1,0 +1,19 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+message SearchDocflowsRequest
+{
+    required string QueryString = 1;
+    optional int32 Count = 2 [default = 100];
+    optional int32 FirstIndex = 3;
+    optional SearchScope Scope = 4 [default = SearchScopeAny];
+    optional bool InjectEntityContent = 5 [default = false];
+}
+
+enum SearchScope
+{
+    SearchScopeAny = 0;
+    SearchScopeIncoming = 1;
+    SearchScopeOutgoing = 2;
+    SearchScopeDeleted = 3;
+    SearchScopeInternal = 4;
+}

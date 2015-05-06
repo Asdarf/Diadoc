@@ -1,0 +1,19 @@
+import "Timestamp.proto";
+import "DocumentId.proto";
+import "ForwardDocumentEvent.proto";
+import "Docflow/Docflow.proto";
+import "Docflow/DocumentInfo.proto";
+
+package CRM.Lib.Docflow.Api.Diadoc.Model.Docflow;
+
+message DocumentWithDocflow
+{
+	optional CRM.Lib.Docflow.Api.Diadoc.Model.DocumentId DocumentId = 1;
+	optional string LastEventId = 2;
+	optional CRM.Lib.Docflow.Api.Diadoc.Model.Timestamp LastEventTimestamp = 3;
+	optional DocumentInfo DocumentInfo = 4;
+	optional Docflow Docflow = 5;
+	repeated CRM.Lib.Docflow.Api.Diadoc.Model.DocumentId InitialDocumentIds = 6;
+	repeated CRM.Lib.Docflow.Api.Diadoc.Model.DocumentId SubordinateDocumentIds = 7;
+	repeated CRM.Lib.Docflow.Api.Diadoc.Model.ForwardDocumentEvent ForwardDocumentEvents = 8;
+}

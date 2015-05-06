@@ -1,0 +1,9 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+message GetDocflowsByPacketIdRequest
+{
+    required string PacketId = 1;
+    optional int32 Count = 2 [default = 100];
+    optional bool InjectEntityContent = 3 [default = false];
+    optional bytes AfterIndexKey = 4;
+}

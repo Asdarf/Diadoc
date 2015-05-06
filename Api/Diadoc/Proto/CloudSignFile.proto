@@ -1,0 +1,8 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+import "Content_v2.proto";
+
+message CloudSignFile {
+    optional Content_v2 Content = 1;
+    optional string FileName = 2;
+}

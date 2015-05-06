@@ -1,0 +1,7 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+import "CloudSignFile.proto";
+
+message CloudSignRequest {
+    repeated CloudSignFile Files = 1;
+}

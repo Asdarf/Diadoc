@@ -1,0 +1,5 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model.UnilateralDocument;
+import "UnilateralDocument/UnilateralDocumentStatus.proto";
+message ServiceDetailsMetadata {
+    optional UnilateralDocumentStatus DocumentStatus = 1 [default = UnknownUnilateralDocumentStatus];
+}

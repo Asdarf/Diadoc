@@ -1,0 +1,12 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model.UnilateralDocument;
+
+enum UnilateralDocumentStatus {
+    UnknownUnilateralDocumentStatus = 0;
+    Outbound = 1;
+    OutboundWaitingForSenderSignature = 4;
+    OutboundInvalidSenderSignature = 5;
+    Inbound = 2;
+    Internal = 3;
+    InternalWaitingForSenderSignature = 6;
+    InternalInvalidSenderSignature = 7;
+}

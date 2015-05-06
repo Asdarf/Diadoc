@@ -1,0 +1,16 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model.Docflow;
+
+import "Timestamp.proto";
+import "DocumentId.proto";
+import "Docflow/DocumentWithDocflow.proto";
+
+message DocflowEvent
+{
+    optional string EventId = 1;
+    optional CRM.Lib.Docflow.Api.Diadoc.Model.Timestamp Timestamp = 2;
+    optional CRM.Lib.Docflow.Api.Diadoc.Model.DocumentId DocumentId = 3;
+    optional bytes IndexKey = 4;
+    optional DocumentWithDocflow Document = 5;
+    optional string PreviousEventId = 6;
+    optional DocumentWithDocflow PreviousDocumentState = 7;
+}

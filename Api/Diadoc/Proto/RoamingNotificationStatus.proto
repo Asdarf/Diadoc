@@ -1,0 +1,8 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+enum RoamingNotificationStatus {
+    UnknownRoamingNotificationStatus = 0; // Reserved status to report to legacy clients for newly introduced statuses
+    NotificationStatusNone = 1;
+    NotificationStatusSuccess = 2;
+    NotificationStatusError = 3;
+}

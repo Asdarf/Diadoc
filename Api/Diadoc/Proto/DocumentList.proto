@@ -1,0 +1,8 @@
+import "Document.proto";
+
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+message DocumentList {
+    required int32 TotalCount = 1;
+    repeated Document Documents = 2;
+}

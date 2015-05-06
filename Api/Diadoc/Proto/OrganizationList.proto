@@ -1,0 +1,7 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+import "Organization.proto";
+
+message OrganizationList {
+    repeated Organization Organizations = 1;
+}

@@ -1,0 +1,10 @@
+import "Docflow/Attachment.proto";
+
+package CRM.Lib.Docflow.Api.Diadoc.Model.Docflow;
+
+message ReceiptDocflow
+{
+	optional bool IsFinished = 1;
+
+	optional SignedAttachment ReceiptAttachment = 2;
+}

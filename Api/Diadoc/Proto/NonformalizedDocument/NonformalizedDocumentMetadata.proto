@@ -1,0 +1,5 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model.NonformalizedDocument;
+import "NonformalizedDocument/NonformalizedDocumentStatus.proto";
+message NonformalizedDocumentMetadata {
+    optional NonformalizedDocumentStatus DocumentStatus = 1 [default = UnknownNonformalizedDocumentStatus];
+}

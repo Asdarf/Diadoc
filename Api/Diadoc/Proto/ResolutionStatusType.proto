@@ -1,0 +1,10 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model;
+
+enum ResolutionStatusType {
+    None = 0;
+    Approved = 1;
+    Disapproved = 2;
+    ApprovementRequested = 3;
+    SignatureRequested = 4;
+    SignatureDenied = 5;
+}

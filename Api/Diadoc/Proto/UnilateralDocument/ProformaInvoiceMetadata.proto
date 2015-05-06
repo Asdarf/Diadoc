@@ -1,0 +1,8 @@
+package CRM.Lib.Docflow.Api.Diadoc.Model.UnilateralDocument;
+import "UnilateralDocument/UnilateralDocumentStatus.proto";
+message ProformaInvoiceMetadata {
+    optional UnilateralDocumentStatus DocumentStatus = 1 [default = UnknownUnilateralDocumentStatus];
+    required string Total = 2;
+    optional string Vat = 3;
+    optional string Grounds = 4;
+}
