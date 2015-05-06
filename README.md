@@ -6,6 +6,8 @@
 
 Для успешного запуска модуля необходимо уставновленное в PHP расширение [php-protobuf](https://github.com/allegro/php-protobuf)
 
+Документация по Diadoc SDK - https://github.com/skbkontur/diadocsdk/wiki 
+
 ### Конфигурация для использования через [DI Symfony 2](http://symfony.com/doc/current/components/dependency_injection/introduction.html)
 
 <pre><code>
