@@ -6,8 +6,9 @@
 
 Для успешного запуска модуля необходимо уставновленное в PHP расширение [php-protobuf](https://github.com/allegro/php-protobuf)
 
-### Конфишурация для использования через DI Symfony 2
+### Конфигурация для использования через [DI Symfony 2](http://symfony.com/doc/current/components/dependency_injection/introduction.html)
 
+<pre><code>
 parameters:
     docflow.api.diadoc:
         url: https://diadoc-api.kontur.ru
@@ -20,3 +21,4 @@ services:
     docflow.client:
         class: CRM\Lib\Docflow\Api\Diadoc\ClientAdapter
         arguments: [ %docflow.api.diadoc% ]
+</code></pre>
